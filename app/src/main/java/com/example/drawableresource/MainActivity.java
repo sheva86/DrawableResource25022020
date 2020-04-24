@@ -15,7 +15,7 @@ RadioGroup mRadioGroup;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mRadioGroup = findViewById(R.id.radioGroup);
+//        mRadioGroup = findViewById(R.id.radioGroup);
 //        mCbAndroid = findViewById(R.id.checkbox);
 //        mCbAndroid.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 //            @Override
@@ -27,21 +27,21 @@ RadioGroup mRadioGroup;
 //                }
 //            }
 //        });
-        mRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                switch (checkedId){
-                    case R.id.radioAndroid :
-                        Toast.makeText(MainActivity.this, "Android", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.radioJava:
-                        Toast.makeText(MainActivity.this, "Java", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.radioPHP:
-                        Toast.makeText(MainActivity.this, "PHP", Toast.LENGTH_SHORT).show();
-                        break;
-                }
-            }
-        });
+//        mRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(RadioGroup group, int checkedId) {
+//                switch (checkedId){
+//                    case R.id.radioAndroid :
+//                        Toast.makeText(MainActivity.this, "Android", Toast.LENGTH_SHORT).show();
+//                        break;
+//                    case R.id.radioJava:
+//                        Toast.makeText(MainActivity.this, "Java", Toast.LENGTH_SHORT).show();
+//                        break;
+//                    case R.id.radioPHP:
+//                        Toast.makeText(MainActivity.this, "PHP", Toast.LENGTH_SHORT).show();
+//                        break;
+//                }
+//            }
+//        });
     }
 }
